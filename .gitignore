@@ -1,0 +1,9 @@
+*.o
+*.class
+*.hi
+*.beam
+*.exe
+prime-c
+prime-rust
+prime-go
+prime-haskell

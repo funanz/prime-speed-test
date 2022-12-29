@@ -1,0 +1,3 @@
+#!/bin/sh
+#erlc prime.erl
+erl -noshell -s prime main -s init stop

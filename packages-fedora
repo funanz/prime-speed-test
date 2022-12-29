@@ -1,0 +1,14 @@
+erlang-erts
+gcc
+ghc-compiler
+golang-bin
+java-latest-openjdk-devel
+julia
+lua
+luajit
+mono-core
+nodejs
+perl-interpreter
+python3
+ruby
+rust
