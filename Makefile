@@ -1,5 +1,5 @@
 TARGETS = prime-c prime.exe prime.class prime-rust prime-go	\
-	prime-haskell prime.beam
+	prime-haskell prime.beam prime-dotnet
 
 all: $(TARGETS)
 
@@ -7,7 +7,8 @@ run: all
 	./run.sh
 
 clean:
-	rm -f $(TARGETS) *.o *.hi
+	$(RM) $(TARGETS) *.o *.hi
+	$(RM) -r obj bin publish
 
 prime-c: prime.c
 	gcc -O2 -o $@ $<
@@ -29,3 +30,7 @@ prime-haskell: prime.hs
 
 prime.beam: prime.erl
 	erlc $<
+
+prime-dotnet: prime.cs
+	dotnet publish -c Release -o publish --nologo
+	ln -sf publish/prime $@

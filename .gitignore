@@ -1,3 +1,4 @@
+*~
 *.o
 *.class
 *.hi
@@ -7,3 +8,7 @@ prime-c
 prime-rust
 prime-go
 prime-haskell
+prime-dotnet
+bin/
+obj/
+publish/
